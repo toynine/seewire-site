@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Seewire 도움말 · Help</title>
+<style>
+:root { color-scheme: light dark; --bg: #ffffff; --text: #1d2125; --muted: #5b6670; --line: #d9dee2; --accent: #087f76; --code: #f1f3f5; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #111416; --text: #e7eaec; --muted: #a3adb4; --line: #2c3236; --accent: #3ccfc0; --code: #1c2124; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+h1 { font-size: 1.6rem; line-height: 1.3; margin: 8px 0 16px; }
+h2 { font-size: 1.25rem; margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+h3 { font-size: 1.1rem; margin: 28px 0 8px; }
+p, ul, ol { margin: 8px 0; }
+ul, ol { padding-left: 1.4em; }
+li { margin: 4px 0; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+code { background: var(--code); padding: 0 4px; border-radius: 4px; font-size: 0.92em; overflow-wrap: anywhere; }
+.table { overflow-x: auto; margin: 12px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+nav { font-size: 0.92rem; color: var(--muted); }
+nav a { margin-right: 12px; }
+footer { margin-top: 48px; font-size: 0.88rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">개인정보 처리방침</a><a href="en.html">Privacy Policy</a><a href="support.html">도움말 · Help</a></nav>
+<h1>Seewire 도움말</h1>
+<p>Seewire는 유선 USB 카메라 화면을 안드로이드 폰에 보여 주는 앱이에요.</p>
+<h3>쓸 수 있는 카메라</h3>
+<ul>
+<li>UVC 표준을 따르고 MJPEG나 비압축(YUY2) 영상을 보내는 유선 USB 카메라: USB 내시경·보어스코프, USB 현미경, 웹캠, HDMI-USB 캡처카드</li>
+<li>폰: Android 10 이상, USB OTG(USB 호스트)를 지원하는 폰</li>
+<li>쓸 수 없는 것: Wi-Fi 내시경, H.264로만 보내는 카메라, 제조사 전용 앱이 필요한 카메라. 이런 비표준 내시경 일부는 연결 진단의 [실험 연결]로 시도해 볼 수 있지만 동작을 보장하지 않아요.</li>
+<li>HDMI 캡처카드는 복제 방지(HDCP)가 걸린 화면을 보여 줄 수 없어요.</li>
+</ul>
+<h3>화면이 안 나올 때</h3>
+<ol>
+<li>폰 잠금을 풀고 꽂아 주세요. 잠금 상태에서 꽂으면 연결을 막는 폰이 있어요. 고급 보호가 켜져 있으면 잠금 상태에서는 새 USB 기기가 연결되지 않아요.</li>
+<li>젠더를 쓴다면 방향을 확인하세요. 젠더의 USB-C 플러그를 폰에 꽂고, 카메라는 젠더의 USB-A 구멍에 꽂아요. USB-C 카메라는 젠더 없이 바로 꽂아요.</li>
+<li>카메라를 USB-C 단자에 바로 꽂았는데 안 되면 USB-C를 USB-A로 바꾸는 젠더를 거쳐 꽂아 보세요. 일부 카메라는 그래야 폰이 전원을 줘요.</li>
+<li>폰 케이스를 벗기고 끝까지 꽂아 주세요. 케이스 때문에 덜 들어가는 경우가 있어요.</li>
+<li>일부 폰은 설정에서 OTG를 켜야 해요.</li>
+<li>연결이 자꾸 끊기면 전원이 부족하거나 접촉이 나쁠 수 있어요. 충전 겸용 OTG 젠더나 전원 허브를 써 보세요.</li>
+<li>그래도 안 되면 앱에서 [연결 진단]을 열어 보세요. 단계마다 무엇을 확인했는지와 해 볼 일을 알려 줘요.</li>
+</ol>
+<h3>문제 신고</h3>
+<ul>
+<li>연결 진단에서 [문제 신고 보내기]를 누르면 폰·카메라 정보와 연결 기록을 담은 문제 신고를 보낼 수 있어요. 보내기 전에 담긴 내용을 모두 보여 드려요.</li>
+<li>받은 날부터 2주 안에 앱으로 답변을 드려요. 답변은 설정 &gt; 보낸 문제 신고에 나와요. 답변은 셋 중 하나예요.<ul>
+<li>고친 업데이트</li>
+<li>임시 설정: [이 설정 적용]으로 바로 적용할 수 있어요.</li>
+<li>지원할 수 없는 이유와 대안</li>
+</ul></li>
+<li>추가 정보를 부탁드리면, 다시 보내 주실 때까지는 2주에 넣지 않아요.</li>
+<li>2주 약속은 연결과 화면 문제(인식이 안 됨, 영상이 안 나옴, 검은 화면, 끊김)에 해당해요. 사진·녹화 같은 다른 문제도 답변을 드리지만 기한은 약속하지 못해요.</li>
+<li>재현 데이터(선택)를 켜면 카메라가 보내는 영상 3초를 함께 보내요. 카메라에 비친 화면이 담기니 빈 벽처럼 보여도 괜찮은 곳을 비춰 주세요.</li>
+<li>연결 문제는 앱의 문제 신고로 보내 주세요. 원인을 찾는 데 필요한 정보는 메일로는 받을 수 없어요.</li>
+<li>보낸 문제 신고는 Google Firebase(미국)에 저장되고 받은 날부터 90일 뒤 자동으로 지워져요. 자세한 내용은 <a href="https://seewire.wavefound.net/">개인정보 처리방침</a>에 있어요.</li>
+</ul>
+<h3 id="refund">Pro 환불</h3>
+<ul>
+<li>Seewire Pro는 한 번 구매예요.</li>
+<li>구매하고 48시간이 안 지났다면 Google Play에서 직접 환불을 요청할 수 있어요(<a href="https://support.google.com/googleplay/answer/2479637">Google Play 환불 도움말</a>).</li>
+<li>48시간이 지났다면 contact@wavefound.net으로 주문 번호와 사정을 알려 주세요. 지원할 수 없다는 답변을 받은 경우라면 그 신고 번호도 함께 적어 주세요. 확인해서 안내해 드려요.</li>
+<li>주문 번호는 GPA.로 시작하고, Google Play 영수증 메일에 있어요.</li>
+</ul>
+<h3>Pro를 살 수 없다고 나와요</h3>
+<ul>
+<li>러시아처럼 Google Play 결제가 되지 않는 곳이나, Play 스토어가 없는 폰에서는 Pro를 살 수 없어요. 앱은 "이 폰이나 지역에서는 Google Play 결제를 쓸 수 없어요"라고 알려 드려요.</li>
+<li>"지금은 Pro를 살 수 없어요"가 나오면 그 나라에서 아직 팔지 않거나 잠깐 상품을 받지 못한 거예요. 나중에 다시 열어 보세요.</li>
+<li>기본 기능(카메라 화면·사진·녹화·연결 진단·길이와 원 지름 측정·주석·날짜와 시간 넣기)은 Pro 없이도 모두 쓸 수 있어요.</li>
+</ul>
+<h3>내 문제 신고 지우기</h3>
+<p>설정 &gt; 보낸 문제 신고에서 신고 번호(SW-로 시작)를 확인해 contact@wavefound.net로 보내 주세요. 그 번호의 문제 신고, 재현 데이터, 답변을 모두 지워요.</p>
+<h3>연락처</h3>
+<ul>
+<li>메일: contact@wavefound.net (환불, 문제 신고 삭제, 그 밖의 문의)</li>
+<li><a href="https://seewire.wavefound.net/">개인정보 처리방침</a></li>
+</ul>
+<section lang="en">
+<h1>Seewire Help</h1>
+<p>Seewire shows the picture from a wired USB camera on your Android phone.</p>
+<h3>Supported cameras</h3>
+<ul>
+<li>Wired USB cameras that follow the UVC standard and send MJPEG or uncompressed (YUY2) video: USB endoscopes and borescopes, USB microscopes, webcams and HDMI-to-USB capture cards</li>
+<li>Phones: Android 10 or later, with USB OTG (USB host) support</li>
+<li>Not supported: Wi-Fi endoscopes, cameras that only send H.264, and cameras that need their maker's own app. Some of these non-standard endoscopes can be tried with Experimental connection in connection diagnostics, but it is not guaranteed to work.</li>
+<li>HDMI capture cards can't show copy-protected (HDCP) content.</li>
+</ul>
+<h3>If the picture doesn't appear</h3>
+<ol>
+<li>Unlock your phone, then plug the camera in. Some phones block new USB devices while locked. With Advanced Protection on, new USB devices don't connect while the phone is locked.</li>
+<li>If you use an adapter, check its direction: plug the adapter's USB-C plug into the phone and the camera into the adapter's USB-A socket. A USB-C camera plugs straight into the phone.</li>
+<li>If a camera plugged straight into the USB-C port doesn't work, try it through a USB-C to USB-A adapter. Some cameras only get power from the phone that way.</li>
+<li>Take off a thick phone case and push the plug all the way in. A case can stop it from going in fully.</li>
+<li>Some phones need OTG turned on in their settings.</li>
+<li>If the connection keeps dropping, the camera may not be getting enough power, or the contact may be poor. Try an OTG adapter with charging or a powered USB hub.</li>
+<li>If it still doesn't work, open Connection diagnostics in the app. It shows what it checked at each step and what to try next.</li>
+</ol>
+<h3>Problem reports</h3>
+<ul>
+<li>In connection diagnostics, tap Send problem report to send a report with your phone and camera details and the connection logs. You can see everything in it before you send it.</li>
+<li>We answer in the app within 2 weeks of receiving it. Answers appear in Settings &gt; Sent problem reports. Each answer is one of these:<ul>
+<li>a fixed update</li>
+<li>a temporary setting, which you can apply right away with Apply this setting</li>
+<li>why the camera can't be supported, and what you can use instead</li>
+</ul></li>
+<li>If we ask for more information, the 2 weeks pause until you send it.</li>
+<li>The 2-week promise covers connection and picture problems (not recognized, no video, black screen, dropping out). We answer other problems too, such as photos and recording, but can't promise a time.</li>
+<li>If you turn on reproduction data (optional), 3 seconds of the camera's video are sent too. It contains whatever the camera sees, so point it somewhere you don't mind sharing, such as a blank wall.</li>
+<li>Please send connection problems as a problem report from the app. Email can't carry the information we need to find the cause.</li>
+<li>Problem reports are stored with Google Firebase in the United States and deleted automatically 90 days after we receive them. See the <a href="https://seewire.wavefound.net/en.html">Privacy Policy</a> for details.</li>
+</ul>
+<h3 id="refund-en">Pro refunds</h3>
+<ul>
+<li>Seewire Pro is a one-time purchase.</li>
+<li>Within 48 hours of buying, you can request a refund directly from Google Play (<a href="https://support.google.com/googleplay/answer/2479637">Google Play refund help</a>).</li>
+<li>After 48 hours, email contact@wavefound.net with your order number and what happened. If we answered that your camera can't be supported, include that problem report number too. We'll look into it and get back to you.</li>
+<li>Your order number starts with GPA. and is in your Google Play receipt email.</li>
+</ul>
+<h3>It says I can't buy Pro</h3>
+<ul>
+<li>Pro can't be bought where Google Play billing isn't available, such as Russia, or on phones without the Play Store. The app then says "Google Play billing isn't available on this phone or in this region."</li>
+<li>If it says "Pro can't be bought right now," Pro isn't sold in your country yet or the product couldn't be loaded for a moment. Try again later.</li>
+<li>The core features (the camera view, photos, recording, connection diagnostics, length and diameter measurement, annotations, adding the date and time) all work without Pro.</li>
+</ul>
+<h3>Delete a problem report</h3>
+<p>Find the report number (it starts with SW-) in Settings &gt; Sent problem reports and email it to contact@wavefound.net. We delete that report, its reproduction data and the answer.</p>
+<h3>Contact</h3>
+<ul>
+<li>Email: contact@wavefound.net (refunds, deleting problem reports, other questions)</li>
+<li><a href="https://seewire.wavefound.net/en.html">Privacy Policy</a></li>
+</ul>
+</section>
+<footer>Wavefound · contact@wavefound.net</footer>
+</main>
+</body>
+</html>
